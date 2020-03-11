@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _tab1__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tab1 */ \"./src/tab1.js\");\n/* harmony import */ var _tab2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tab2 */ \"./src/tab2.js\");\n\n\nlet content = document.getElementById(\"content\");\ncontent.appendChild(Object(_tab2__WEBPACK_IMPORTED_MODULE_1__[\"tab2\"])());\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _tab1__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tab1 */ \"./src/tab1.js\");\n/* harmony import */ var _tab2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tab2 */ \"./src/tab2.js\");\n/* harmony import */ var _tab3__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./tab3 */ \"./src/tab3.js\");\n/* harmony import */ var _texts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./texts */ \"./src/texts.js\");\n\n\n\n\nlet body = document.querySelector(\"body\");\nlet logo = document.createElement(\"h1\");\nlet tab1 = document.createElement(\"button\");\nlet sectab = document.createElement(\"button\");\nlet thirdtab = document.createElement(\"button\");\nlet content = document.getElementById(\"content\");\n\nlogo.classList.add(\"logo\");\nlogo.innerText = \"yes food please\";\nbody.prepend(logo);\n\ntab1.textContent = \"Home\";\nsectab.textContent = \"Menu\";\nthirdtab.textContent = \"About Us\";\n\nfunction clear() {\n  content.innerHTML = \"\";\n  content.appendChild(tab1);\n  content.appendChild(sectab);\n  content.appendChild(thirdtab);\n}\n\ntab1.addEventListener(\"click\", () => {\n  clear();\n  content.append(Object(_tab1__WEBPACK_IMPORTED_MODULE_0__[\"firstTab\"])());\n});\n\nsectab.addEventListener(\"click\", () => {\n  clear();\n  content.append(Object(_tab2__WEBPACK_IMPORTED_MODULE_1__[\"tab2\"])());\n});\n\nthirdtab.addEventListener(\"click\", () => {\n  clear();\n  content.append(Object(_tab3__WEBPACK_IMPORTED_MODULE_2__[\"tab3\"])());\n});\n\ncontent.appendChild(tab1);\ncontent.appendChild(sectab);\ncontent.appendChild(thirdtab);\ncontent.append(Object(_tab1__WEBPACK_IMPORTED_MODULE_0__[\"firstTab\"])());\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -122,14 +122,27 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
+/***/ "./src/tab3.js":
+/*!*********************!*\
+  !*** ./src/tab3.js ***!
+  \*********************/
+/*! exports provided: tab3 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"tab3\", function() { return tab3; });\n/* harmony import */ var _texts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./texts */ \"./src/texts.js\");\n\nfunction tab3() {\n  let cont = document.createElement(\"div\");\n  let titleView = document.createElement(\"h1\");\n  let firstPView = document.createElement(\"p\");\n  let secondPView = document.createElement(\"p\");\n\n  titleView.innerText = \"Heading 3\";\n  firstPView.innerText = _texts__WEBPACK_IMPORTED_MODULE_0__[\"firstPText2\"];\n  secondPView.innerText = _texts__WEBPACK_IMPORTED_MODULE_0__[\"secondPText2\"];\n\n  cont.appendChild(titleView);\n  cont.appendChild(firstPView);\n  cont.appendChild(secondPView);\n\n  return cont;\n}\n\n\n//# sourceURL=webpack:///./src/tab3.js?");
+
+/***/ }),
+
 /***/ "./src/texts.js":
 /*!**********************!*\
   !*** ./src/texts.js ***!
   \**********************/
-/*! exports provided: firstPText, secondPText, thirdPText */
-/***/ (function(module, exports) {
+/*! exports provided: firstPText, secondPText, thirdPText, firstPText2, secondPText2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("throw new Error(\"Module parse failed: Unexpected token (9:7)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n|   \\\"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.\\\";\\n| // tab 3\\n> export let \");\n\n//# sourceURL=webpack:///./src/texts.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"firstPText\", function() { return firstPText; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"secondPText\", function() { return secondPText; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"thirdPText\", function() { return thirdPText; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"firstPText2\", function() { return firstPText2; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"secondPText2\", function() { return secondPText2; });\n// tab 2\nlet firstPText =\n  \"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.\";\nlet secondPText =\n  \"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.\";\nlet thirdPText =\n  \"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.\";\n// tab 3\nlet firstPText2 =\n  \"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.\";\nlet secondPText2 =\n  \"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.\";\n\n\n//# sourceURL=webpack:///./src/texts.js?");
 
 /***/ })
 
